@@ -1,0 +1,43 @@
+ LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[]{
+                new DataPoint(0, 1),
+                new DataPoint(1, 5),
+                new DataPoint(2, 3),
+                new DataPoint(3, 2),
+                new DataPoint(4, 7),
+                new DataPoint(5, 9),
+                new DataPoint(6, 1),
+                new DataPoint(7, 2),
+                new DataPoint(8, 6)
+        });
+        graph.addSeries(series);
+
+// edita o grafico
+        series.setTitle("A.C.A.R");
+        series.setColor(Color.GREEN);
+        series.setDrawDataPoints(true);
+        series.setDataPointsRadius(10);
+        series.setThickness(12);
+
+
+        @SuppressLint("ResourceType") final ArrayAdapter<DataPoint> adaptador = new ArrayAdapter<DataPoint>(this, R.id.graph);
+        LineGraphSeries<DataPoint> series2 = new LineGraphSeries<>(new DataPoint[]{
+                new DataPoint(0, 3),
+                new DataPoint(1, 8),
+                new DataPoint(2, 6),
+                new DataPoint(3, 4),
+                new DataPoint(4, 14),
+                new DataPoint(5, 18),
+                new DataPoint(6, 3),
+                new DataPoint(7, 5),
+                new DataPoint(8, 9)
+        });
+        graph.addSeries(series2);
+        series2.setTitle("SABESP");
+        series2.setColor(Color.RED);
+        series2.setDrawDataPoints(true);
+        series2.setDataPointsRadius(10);
+        series2.setThickness(10);
+
+        // legend
+        graph.getLegendRenderer().setVisible(true);
+        graph.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);

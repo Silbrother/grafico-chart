@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Grafico de Pizza</string>
     <string name="graficoID">Grafico de Pizza</string>
+    <string name="title_activity_graph__linear">Graph_Linear</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="x_value">x_value</string>
+    <string name="title_activity_principal">Principal</string>
 </resources>
